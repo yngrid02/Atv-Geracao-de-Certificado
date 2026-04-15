@@ -9,10 +9,6 @@ print("=== GERADOR DE CERTIFICADO DIGITAL ===\n")
 country = input("País (use sigla, ex: BR, US, PT): ").strip().upper()
 
 
-if len(country) != 2:
-    print("❌ Erro: o país deve ser em siglas (ex: BR, US, PT).")
-    exit()
-
 state = input("Estado: ")
 city = input("Cidade: ")
 organization = input("Organização: ")
@@ -45,7 +41,6 @@ subject = issuer = x509.Name([
 
 valid_from = datetime.datetime.now(datetime.timezone.utc)
 valid_to = valid_from + datetime.timedelta(days=valid_days)
-
 
 certificate = (
     x509.CertificateBuilder()

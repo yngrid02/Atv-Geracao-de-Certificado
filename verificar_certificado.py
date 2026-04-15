@@ -7,7 +7,7 @@ with open("certificate.pem", "rb") as f:
 print("\n================ CERTIFICADO DIGITAL ================\n")
 
 
-print("🔹 DADOS DO TITULAR:")
+print(" DADOS DO TITULAR:")
 dados = {}
 for attr in cert.subject:
     dados[attr.oid._name] = attr.value
@@ -19,12 +19,12 @@ print(f"Organização: {dados.get('organizationName')}")
 print(f"Nome comum: {dados.get('commonName')}")
 
 
-print("\n🔹 VALIDADE:")
+print("\n VALIDADE:")
 print("Início:", cert.not_valid_before_utc)
 print("Fim   :", cert.not_valid_after_utc)
 
 
-print("\n🔹 INFORMAÇÕES TÉCNICAS:")
+print("\n INFORMAÇÕES TÉCNICAS:")
 print("Serial Number:", cert.serial_number)
 print("Algoritmo:", cert.signature_hash_algorithm.name)
 
