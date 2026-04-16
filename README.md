@@ -1,14 +1,6 @@
 # ✒️ Geração de Certificado
 
 ## 📖 Descrição
-
-## 📂 Estrutura do Projeto
-Atv-Geracao-de-Certificado
-├── certificado.py
-├── README.md
-├── requirements.txt
-└── verificar certificado.py
-
   
 ## 🚀 Como Rodar o Projeto
 
