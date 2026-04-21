@@ -1,4 +1,5 @@
 from cryptography import x509
+from datetime import timedelta
 
 
 with open("certificate.pem", "rb") as f:
@@ -20,8 +21,11 @@ print(f"Nome comum: {dados.get('commonName')}")
 
 
 print("\n VALIDADE:")
-print("Início:", cert.not_valid_before_utc)
-print("Fim   :", cert.not_valid_after_utc)
+data_inicio = (cert.not_valid_before_utc - timedelta(hours=3)).strftime("%d/%m/%Y %H:%M:%S")
+data_fim = (cert.not_valid_after_utc - timedelta(hours=3)).strftime("%d/%m/%Y %H:%M:%S")
+
+print("Início:", data_inicio)
+print("Fim   :", data_fim)
 
 
 print("\n INFORMAÇÕES TÉCNICAS:")
