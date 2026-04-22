@@ -36,7 +36,7 @@ Certifique-se de ter o Python instalado. Instale as bibliotecas necessárias:
 
 Clone o repositório ou baixe o arquivo gerador_certificado.py e execute:
 
-- python gerador_certificado.py
+- python certificado.py
 
 **3. Saída Gerada** 
 
