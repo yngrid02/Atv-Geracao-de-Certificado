@@ -34,7 +34,7 @@ Certifique-se de ter o Python instalado. Instale as bibliotecas necessárias:
 
 **2. Execução** 
 
-Clone o repositório ou baixe o arquivo gerador_certificado.py e execute:
+Clone o repositório ou baixe o arquivo código e execute:
 
 - python certificado.py
 
@@ -45,6 +45,14 @@ Após a execução, os seguintes arquivos serão criados na raiz do projeto:
 - **private_key.pem:** Contém a sua chave privada (Mantenha em segurança!).
   
 - **certificate.pem:** O seu certificado digital contendo sua chave pública e dados de identificação.
+
+**4. Verificar o certificado**
+
+Após a criação dos arquivos, execute o comando abaixo:
+
+- python verificar_certificado.py
+
+Dessa forma, é possivel visualizar as informações presentes no certificado digital.
 
 # Descrição do Passo a Passo (Relatório Técnico)
 **I. Geração do Par de Chaves**
